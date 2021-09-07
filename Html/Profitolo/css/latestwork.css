@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container-work {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.work-flex1 {
+    width: 40%;
+    background-image: linear-gradient(48deg, rgba(70, 67, 67, 0.7), rgba(70, 67, 67, 0.7), rgba(70, 67, 67, 0.7), rgba(70, 67, 67, 0.7)),
+        url("https://images.unsplash.com/photo-1492551557933-34265f7af79e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-container1-info {
+    
+    text-align: center;
+}
+
+.work-container1-info>h2 {
+    width: 350px;
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    padding-bottom: 2rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.work-container1-info>p {
+    width: 350px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1a81f;
+    font-weight: 700;
+}
+
+.work-flex2 {
+    background-color: #1C1D1C;
+    width: 60%;
+}
+
+.project {
+    background-color: #1C1D1C;
+    height: 100vh;
+ 
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj-head>h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    opacity: .7;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.project-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.project-grid>.card {
+    width: 250px;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    height: 200px;
+    border: 1px solid;
+}
+
+.proj-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+}
+
+.exp {
+    background-color: #1C1D1C;
+    height: 100vh;
+}
+
+.proj1 {
+    background-image: url("../images/auth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proj-info {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+
+}
+
+.proj-info:hover {
+    opacity: 1;
+    background-color: rgba(70, 67, 67, 0.7);
+    font-family: 'Montserrat', sans-serif;
+    color: cornsilk;
+    font-size: .7rem;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    font-weight: 900;
+}
+
+.proj-info>p {
+    padding-top: 1rem;
+    color: #f1a81f;
+}
+.proj-info>button{
+    display: none;
+    outline: none;
+    border: 1px solid cornsilk;
+    margin-top: .5rem;
+    padding: .5rem 2.5rem .5rem 2.5rem;
+    color: cornsilk;
+    background-color: transparent;
+}
+.proj2 {
+    background-image: url("../images/news.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.proj3 {
+    background-image: url("../images/googleclone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.proj4 {
+    background-image: url("../images/weather-news.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-info>button{
+    outline: none;
+    border: 1px solid cornsilk;
+    padding: .5rem 2.5rem .5rem 2.5rem;
+    margin-top: 4rem;
+    color: cornsilk;
+    background-color: transparent;
+}
+.project-info>button:hover{
+    border:1px solid #f1a81f;
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .work{
+        overflow-y: scroll;
+    }
+.container-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    overflow-y: scroll;
+}
+.work-flex1{
+    height: 40%;
+    width: 100%;
+}
+.work-flex2{
+    width: 100%;
+}
+  .project-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.project-grid>.card{
+    width: 350px;
+
+}
+.project-info>button{
+display: none;
+}
+.proj-info>button{
+    display: block;
+}
+}
